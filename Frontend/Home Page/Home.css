@@ -1,116 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: white;
-}
-
-nav {
-    display: flex;
+.HeaderPlace {
     position: sticky;
-    top: 10px;
-    margin: 10px 5px 0px 5px;
-    padding: 5px;
-    border: solid 2px;
-    border-radius: 20px;
-    background: rgb(19, 14, 73);
-    background: radial-gradient(circle, rgba(19, 14, 73, 1) 37%, rgba(2, 2, 41, 1) 90%, rgba(0, 8, 10, 1) 100%);
-}
-
-.navbar {
+    top: 0;
     display: flex;
     justify-content: space-between;
-    gap: 60vw;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 23px 12%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.23);
 }
 
-.logo {
-    color: white;
-    /* margin-top: 6px; */
-    margin-left: 35px;
-    padding: 10px;
+/* --------Logo------ */
+/* .logo {
+
+} */
+
+.logo h1 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #000;
 }
 
-.options {
+.logo h1 span {
+    color: #146ef5;
+}
+
+/* ----Navbar------- */
+/* .navbar {} */
+
+.navbar ul {
     display: flex;
-    padding: 6px;
 }
 
-.features {
-    font-family: sans-serif;
-    color: white;
-    margin: 2px 10px 2px 10px;
-    padding: 3px;
+.navbar ul li {
+    list-style: none;
 }
 
-.trending {
-    font-family: sans-serif;
-    color: white;
-    margin: 2px 10px 2px 10px;
-    padding: 3px;
-}
 
-a {
+.navbar ul li a {
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 550;
+    font-family: "PT Serif", serif;
+    padding: 25px;
+    color: #146ef5;
+    transition: all 0.4s ease-in-out;
+
 }
 
-.intro {
-    position: absolute;
-    right: 5%;
+.navbar a {
+    text-shadow: #000;
+}
+
+.navbar ul li a:hover {
+    transform: scale(0.25);
+    color: #000;
+}
+
+.profileIcn {
+    margin-left: 20px;
+}
+
+.profileIcn i {
+    color: #575555;
+    font-size: 40px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.profileIcn i:hover {
+    color: #146ef5;
+    transform: scale(1);
+}
+
+/* .GetsatartBtn {} */
+
+#Btn {
+    padding: 15px 40px 15px 40px;
+    background-color: #146ef5;
+    color: #fff;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.23);
+    border-radius: 12px;
+    border: 2px solid #146ef5;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    font-weight: 700;
+}
+
+#Btn:hover {
+    background-color: #f0f0f0;
+    border: 2px solid #146ef5;
+    transform: scale(1);
+    color: #000;
+}
+
+
+/* ------------------Main Section-------------------- */
+
+.MainSectionPlace {
     display: flex;
     justify-content: space-between;
-    gap: 5%;
+    align-content: center;
+    margin: 30px;
+
 }
 
-.my-content {
-    margin-top: 10%;
-    width: 80%;
-    height: 60vh;
-    text-align: center;
+.QAvedio {
+    background: #f0f0f0;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.23);
+
 }
 
-.image {
-    width: 100%;
-    margin-left: 5%;
-    height: 90vh;
-}
-
-.image img {
-    width: 100%;
-    height: 100%;
-}
-
-.content {
-    text-align: left;
-    line-height: 30px;
-    margin-top: 45px;
-}
-
-.login{
-    background-color: blue;
-    color: white;
-    display: inline;
-    padding: 10px 15px 10px 15px;
-    border: 2px solid blue;
+.QAvedioMain {
+    background-color: #146ef5;
+    width: 550px;
+    height: 300px;
+    margin: auto;
     margin-top: 20px;
-    margin-left: 0px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
-
-.trending :hover {
-    color: white;
-    border: 2px solid black;
-    padding: 5px 15px 5px 15px;
-    border-radius: 20px;   
+/* ------- get Guidance-------- */
+.getGuidance {
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
-.features :hover {
-    color: white;
-    border: 2px solid black;
-    padding: 2px 15px 2px 15px;
-    border-radius: 20px;
-    transition-duration: 0ms;
+.getGuidance a {
+    background-color: #146ef5;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000;
+
 }
 
+.getGuidance i {
+    margin-left: 10px;
+}
+
+/* ------ Main Section --------*/
+.MainText {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.heading {
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    color: #575555;
+    text-shadow: 2px 2px rgba(68, 114, 199, 0.23);
+}
+
+.ParaText {
+    margin-top: 30px;
+    width: 85%;
+    color: #575555;
+    font-family: "PT Serif", serif;
+    font-weight: 540;
+
+}
+
+/* ---------Main Section--------- */
+
+.ExploreBtn {
+    margin-top: 50px;
+}
+
+.Explorebtn {
+    padding: 15px 30px 15px 20px;
+    background: #146ef5;
+    border: 2px solid #146ef5;
+    border-radius: 10px;
+    font-family: "poppins", sans-serif;
+    box-shadow: 0px 0px 2px 2px rgba(68, 114, 199, 0.23);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.Explorebtn:hover {
+    background-color: #f0f0f0;
+    border: 2px solid #146ef5;
+}
+
+.Explorebtn i {
+    margin-left: 10px;
+}
