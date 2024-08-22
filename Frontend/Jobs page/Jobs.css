@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.HeaderPlace {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 23px 12%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.23);
+}
+
+/* --------Logo------ */
+/* .logo {
+  
+  } */
+
+.logo h1 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo h1 span {
+    color: #146ef5;
+}
+
+/* ----Navbar------- */
+/* .navbar {} */
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul h3 {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 550;
+    font-family: "PT Serif", serif;
+    padding: 25px;
+    color: #146ef5;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar a {
+    text-shadow: #000;
+}
+
+.navbar ul li a:hover {
+    transform: scale(0.25);
+    color: #000;
+}
+
+.profileIcn {
+    margin-left: 20px;
+}
+
+.profileIcn i {
+    color: #575555;
+    font-size: 40px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.profileIcn i:hover {
+    color: #146ef5;
+    transform: scale(1);
+}
+
+/* .GetsatartBtn {} */
+
+#Btn {
+    padding: 15px 40px 15px 40px;
+    background-color: #146ef5;
+    color: #fff;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.23);
+    border-radius: 12px;
+    border: 2px solid #146ef5;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    font-weight: 700;
+}
+
+#Btn:hover {
+    background-color: #f0f0f0;
+    border: 2px solid #146ef5;
+    transform: scale(1);
+    color: #000;
+}
+
+/* General Styles for job section */
+.heading-box {
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.heading-box h1 {
+    margin: auto;
+    padding: 20px;
+    color: black;
+}
+
+.heading-box:hover {
+    transform: scale(1.05);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.search-bar {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 72%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007aff;
+    font-size: 1.2rem;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+
+.job-listings {
+    flex: 3;
+}
+
+.job-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 85%;
+    margin-left: 10%;
+}
+
+.job-box:hover {
+    transform: scale(1.04);
+}
+
+.company-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.job-details {
+    flex: 1;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+.job-title {
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+}
+
+.job-location,
+.job-type,
+.required-skills {
+    margin: 5px 0;
+}
+
+.job-description {
+    margin: 10px 0;
+}
+
+.apply-btn {
+    display: inline-block;
+    background-color: #007aff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.apply-btn:hover {
+    background-color: #005bb5;
+}
+
+.filters {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.filters h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.filter {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.filter h4 {
+    margin-bottom: 10px;
+}
+
+.filter label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+
+/* Footer */
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background-color: #10182f;
+    padding: 40px 20px;
+    color: #bfbfbf;
+    text-align: left;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea,
+.contact-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #7489c6;
+    background-color: #1c253a;
+    color: #bfbfbf;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-form button {
+    background-color: #146ef5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0d5bb8;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-col .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col .links li {
+    margin-bottom: 10px;
+}
+
+.footer-col .links a {
+    color: #bfbfbf;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-col .links a:hover {
+    color: #fff;
+}
+
+.footer-col p {
+    color: #bfbfbf;
+    font-size: 0.9rem;
+}
+
+.footer-col form {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.footer-col input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #7489c6;
+    background-color: #1c253a;
+    color: #bfbfbf;
+}
+
+.footer-col button[type="submit"] {
+    background-color: #146ef5;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-col button[type="submit"]:hover {
+    background-color: #0d5bb8;
+}
+
+.footer-col .icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-col .icons i {
+    font-size: 1.5rem;
+    color: #afb6c7;
+    transition: color 0.3s ease;
+}
+
+.footer-col .icons i:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-col {
+        flex: 1 1 100%;
+    }
+
+    .footer-col h4 {
+        font-size: 1rem;
+    }
+
+    .footer-col .links a {
+        font-size: 0.85rem;
+    }
+
+    .footer-col p {
+        font-size: 0.85rem;
+    }
+
+    .contact-form textarea,
+    .contact-form input[type="text"] {
+        font-size: 0.85rem;
+    }
+
+    .contact-form button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .footer-col input[type="text"] {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .footer-col button[type="submit"] {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .footer-col .icons i {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-col {
+        flex: 1 1 100%;
+    }
+
+    .footer-col h4 {
+        font-size: 0.9rem;
+    }
+
+    .footer-col .links a {
+        font-size: 0.75rem;
+    }
+
+    .footer-col p {
+        font-size: 0.75rem;
+    }
+
+    .contact-form textarea,
+    .contact-form input[type="text"] {
+        font-size: 0.75rem;
+    }
+
+    .contact-form button {
+        padding: 7px 14px;
+        font-size: 0.85rem;
+    }
+
+    .footer-col input[type="text"] {
+        padding: 7px;
+        font-size: 0.75rem;
+    }
+
+    .footer-col button[type="submit"] {
+        padding: 7px 10px;
+        font-size: 0.85rem;
+    }
+
+    .footer-col .icons i {
+        font-size: 1rem;
+    }
+}

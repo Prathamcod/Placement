@@ -7,8 +7,8 @@
 }
 
 .HeaderPlace {
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,6 +65,32 @@
     color: #000;
 }
 
+/* -----Search Bar--------- */
+
+.searchBar {
+    display: flex;
+    width: 330px;
+    border: 2px solid #146ef5;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+
+}
+
+.searchBar input {
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+    width: 400px;
+    height: 20px;
+}
+
+
+
+.searchBar {
+    cursor: pointer;
+}
+
+/* ---------Profile Icon ---------- */
 .profileIcn {
     margin-left: 20px;
 }
@@ -81,7 +107,9 @@
     transform: scale(1);
 }
 
-/* .GetsatartBtn {} */
+.GetsatartBtn {
+    margin-left: 20px;
+}
 
 #Btn {
     padding: 15px 40px 15px 40px;
@@ -112,28 +140,330 @@
     justify-content: space-between;
     align-content: center;
     margin: 30px;
+}
+
+
+.QAImg img {
+    width: 90%;
+}
+
+
+/*----------Career Guidance ------------- */
+.CareerGuidance {
+    margin-bottom: 20px;
+    font-size: 3.8rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    color: #575555;
 
 }
 
-.QAvedio {
-    background: #f0f0f0;
-    width: 600px;
-    height: 400px;
-    border-radius: 10px;
-    box-shadow: 0px 2px rgba(0, 0, 0, 0.23);
-
+.CareerGuidance span {
+    color: #146ef5;
 }
 
-.QAvedioMain {
-    background-color: #146ef5;
-    width: 550px;
-    height: 300px;
+.CareerPage {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: auto;
-    margin-top: 20px;
-    border-radius: 10px;
+    width: 90%;
+    height: 90vh;
+    border-radius: 12px;
+    gap: 10px;
 }
 
-/* ------- get Guidance-------- */
+.carrerImg {
+    margin: 0px;
+    width: 1000px;
+    height: 100%;
+    margin: 30px;
+    margin-top: 30px;
+}
+
+.carrerImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.CareerContent {
+    margin-left: 50px;
+}
+
+.CareerContentHeading {
+
+    text-align: left;
+    color: #575555;
+    font-size: 4rem;
+    font-family: "poppins", sans-serif;
+    margin-bottom: 40px;
+    line-height: 60px;
+    width: 100%;
+}
+
+.subContentSub {
+    font-size: 3rem;
+}
+
+.CareerPara {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.CareerGetGuidance {
+    margin-top: 30px;
+}
+
+.CarrerBtn {
+    padding: 15px 30px 15px 30px;
+    background: #146ef5;
+    box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.23);
+    border-radius: 12px;
+    border: 2px solid #146ef5;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.CarrerBtn:hover {
+    background: #f0f0f0;
+    border: 2px solid #146ef5;
+}
+
+.CarrerBtn i {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+/*--------- More Trending Section--------- */
+.MainSectionTrending {
+    margin-top: 100px;
+}
+
+.MoreTrendhead {
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    color: #575555;
+    margin-bottom: 30px;
+}
+
+.MoreTrendhead span {
+    color: #146ef5;
+}
+
+.MoreTrending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: #f0f0f0;
+    width: 100%;
+    height: 50vh;
+
+}
+
+
+.MoreTrendingBox {
+    gap: 10px;
+    margin: 30px;
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.23);
+
+}
+
+.subHeading {
+    background: #146ef5;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0.25 #575555;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.subHeading img {
+    width: 100%;
+    height: 100%;
+}
+
+.subContent {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "poppins", sans-serif;
+}
+
+.UserCount {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+    font-family: "poppins", sans-serif;
+}
+
+.UserCount span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* ---------Resume Enhancer--------- */
+
+
+
+
+.ResumeHeading {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1c253a;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for Resume Section */
+.ResumeSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content of Resume Section */
+.ResumeContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    gap: 70px;
+    /* Increased space between image and text */
+}
+
+/* Image Styling */
+.ResumeImg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+/* Main Text Area */
+.ResumeMaintext {
+    flex: 1;
+}
+
+.ResumeMainHeading {
+
+    font-size: 3.5rem;
+    /* Increased size */
+    color: #575555;
+    margin-bottom: 50px;
+    font-weight: 900;
+    /* Increased font weight */
+    line-height: 1.2;
+    width: 100%;
+    /* Ensures the heading takes full width of the container */
+    max-width: 600px;
+    /* Optional: adjust based on your design needs */
+    text-align: left;
+    /* Aligns text to the left */
+
+}
+
+.ResumeMainHeading span {
+    color: #146ef5;
+}
+
+/* Paragraph styling */
+.resumePara {
+    font-size: 1.2rem;
+    width: 70%;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.ResumeBtn {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #146ef5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ResumeBtn i {
+    margin-left: 8px;
+}
+
+.ResumeBtn:hover {
+    background-color: #0d4b9a;
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .ResumeContent {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        /* Adjust gap for smaller screens */
+    }
+
+    .ResumeImg img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .ResumeMaintext {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ResumeHeading {
+        font-size: 2rem;
+    }
+
+    .ResumeMainHeading {
+        font-size: 1.5rem;
+    }
+
+    .resumePara {
+        font-size: 0.9rem;
+    }
+
+    .ResumeBtn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* ------- get Guidance--------
 .getGuidance {
     margin-top: 30px;
     margin-left: 30px;
@@ -141,21 +471,22 @@
 
 .getGuidance a {
     background-color: #146ef5;
-    padding: 10px 20px 10px 20px;
+    padding: 15px 25px 15px 25px;
     border-radius: 50px;
     text-decoration: none;
     color: #000;
-
+    box-shadow: 0px 0px 2px 2px rgba(68, 114, 199, 0.23);
+    font-weight: 700;
 }
 
 .getGuidance i {
     margin-left: 10px;
-}
+} */
 
 /* ------ Main Section --------*/
 .MainText {
     width: 50%;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .heading {
@@ -163,6 +494,11 @@
     font-family: "Poppins", sans-serif;
     color: #575555;
     text-shadow: 2px 2px rgba(68, 114, 199, 0.23);
+
+}
+
+.heading h2 {
+    font-size: 3rem;
 }
 
 .ParaText {
@@ -198,4 +534,318 @@
 
 .Explorebtn i {
     margin-left: 10px;
+}
+
+/* Trending or Most Hiring */
+
+.Trending {
+    margin-top: 20vh;
+}
+
+.TrendHeading {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #575555;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* ----- logo Company----- */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.AllLogoCompany {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+
+.AllLogoCompany:before,
+.AllLogoCompany:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.AllLogoCompany:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.AllLogoCompany:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.AllLogoCompany:hover .LogoImg {
+    animation-play-state: paused;
+}
+
+.LogoImg {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.LogoImg img {
+    height: 50px;
+    margin: 0 40px;
+}
+
+/* Footer */
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background-color: #10182f;
+    padding: 40px 20px;
+    color: #bfbfbf;
+    text-align: left;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea,
+.contact-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #7489c6;
+    background-color: #1c253a;
+    color: #bfbfbf;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-form button {
+    background-color: #146ef5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0d5bb8;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-col .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col .links li {
+    margin-bottom: 10px;
+}
+
+.footer-col .links a {
+    color: #bfbfbf;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-col .links a:hover {
+    color: #fff;
+}
+
+.footer-col p {
+    color: #bfbfbf;
+    font-size: 0.9rem;
+}
+
+.footer-col form {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.footer-col input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #7489c6;
+    background-color: #1c253a;
+    color: #bfbfbf;
+}
+
+.footer-col button[type="submit"] {
+    background-color: #146ef5;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-col button[type="submit"]:hover {
+    background-color: #0d5bb8;
+}
+
+.footer-col .icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-col .icons i {
+    font-size: 1.5rem;
+    color: #afb6c7;
+    transition: color 0.3s ease;
+}
+
+.footer-col .icons i:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-col {
+        flex: 1 1 100%;
+    }
+
+    .footer-col h4 {
+        font-size: 1rem;
+    }
+
+    .footer-col .links a {
+        font-size: 0.85rem;
+    }
+
+    .footer-col p {
+        font-size: 0.85rem;
+    }
+
+    .contact-form textarea,
+    .contact-form input[type="text"] {
+        font-size: 0.85rem;
+    }
+
+    .contact-form button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .footer-col input[type="text"] {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .footer-col button[type="submit"] {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .footer-col .icons i {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-col {
+        flex: 1 1 100%;
+    }
+
+    .footer-col h4 {
+        font-size: 0.9rem;
+    }
+
+    .footer-col .links a {
+        font-size: 0.75rem;
+    }
+
+    .footer-col p {
+        font-size: 0.75rem;
+    }
+
+    .contact-form textarea,
+    .contact-form input[type="text"] {
+        font-size: 0.75rem;
+    }
+
+    .contact-form button {
+        padding: 7px 14px;
+        font-size: 0.85rem;
+    }
+
+    .footer-col input[type="text"] {
+        padding: 7px;
+        font-size: 0.75rem;
+    }
+
+    .footer-col button[type="submit"] {
+        padding: 7px 10px;
+        font-size: 0.85rem;
+    }
+
+    .footer-col .icons i {
+        font-size: 1rem;
+    }
 }

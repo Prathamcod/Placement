@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance</title>
+    <link rel="stylesheet" href="Career.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Career Guidance</h1>
+            <nav>
+                <ul>
+                    <li><a href="#assessment">Career Assessment</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="assessment" class="container">
+        <h2>Career Assessment</h2>
+        <form id="assessmentForm">
+            <div class="question">
+                <label for="q1">1. What type of work environment do you prefer?</label>
+                <select id="q1" name="q1">
+                    <option value="indoor">Indoor</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q2">2. Do you prefer working alone or in a team?</label>
+                <select id="q2" name="q2">
+                    <option value="alone">Alone</option>
+                    <option value="team">In a team</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q3">3. What type of tasks do you enjoy?</label>
+                <select id="q3" name="q3">
+                    <option value="creative">Creative</option>
+                    <option value="analytical">Analytical</option>
+                    <option value="physical">Physical</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q4">4. What motivates you the most in a job?</label>
+                <select id="q4" name="q4">
+                    <option value="money">Money</option>
+                    <option value="passion">Passion</option>
+                    <option value="recognition">Recognition</option>
+                    <option value="impact">Impact</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q5">5. How do you prefer to handle challenges?</label>
+                <select id="q5" name="q5">
+                    <option value="proactively">Proactively</option>
+                    <option value="reactively">Reactively</option>
+                    <option value="collaboratively">Collaboratively</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q6">6. Do you prefer structured or flexible work environments?</label>
+                <select id="q6" name="q6">
+                    <option value="structured">Structured</option>
+                    <option value="flexible">Flexible</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q7">7. How important is work-life balance to you?</label>
+                <select id="q7" name="q7">
+                    <option value="very">Very Important</option>
+                    <option value="somewhat">Somewhat Important</option>
+                    <option value="not">Not Important</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q8">8. How do you prefer to learn new skills?</label>
+                <select id="q8" name="q8">
+                    <option value="on-the-job">On the Job</option>
+                    <option value="formal-education">Formal Education</option>
+                    <option value="self-study">Self-Study</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q9">9. What type of leadership style do you respond best to?</label>
+                <select id="q9" name="q9">
+                    <option value="authoritative">Authoritative</option>
+                    <option value="collaborative">Collaborative</option>
+                    <option value="hands-off">Hands-Off</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q10">10. What kind of impact do you want to make through your work?</label>
+                <select id="q10" name="q10">
+                    <option value="social">Social</option>
+                    <option value="economic">Economic</option>
+                    <option value="environmental">Environmental</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="results" class="hidden">
+            <h3>Assessment Results</h3>
+            <p>Your responses have been recorded. Based on your answers, we will provide personalized career advice.</p>
+        </div>
+    </section>
+
+    <section id="resources" class="container">
+        <h2>Career Resources</h2>
+        <p>Find various resources to help you with your career planning and development.</p>
+        <!-- Add resources content here -->
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Career Guidance</p>
+    </footer>
+
+    <script src="Career.js"></script>
+</body>
+
+</html>
