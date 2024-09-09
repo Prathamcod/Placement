@@ -13,8 +13,7 @@ body {
 
 /* Navbar */
 .HeaderPlace {
-    position: sticky;
-    top: 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,12 +140,13 @@ body {
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 72%;
+    width: 62%;
+    margin-left: 100px;
 }
 
 .search-bar input {
     width: 100%;
-    padding: 10px 40px 10px 15px;
+    padding: 10px 30px 10px 30px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;

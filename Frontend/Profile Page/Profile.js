@@ -1,62 +1,253 @@
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize Chart.js for performance chart
-    const ctx = document.getElementById('performanceChart').getContext('2d');
-    const performanceChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-            datasets: [{
-                label: 'Coding Performance',
-                data: [10, 20, 15, 25, 30, 20], // Sample data
-                borderColor: 'rgba(75, 192, 192, 1)',
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderWidth: 2,
-                fill: true,
-            }]
+// SIDEBAR TOGGLE
+
+let sidebarOpen = false;
+const sidebar = document.getElementById('sidebar');
+
+function openSidebar() {
+    if (!sidebarOpen) {
+        sidebar.classList.add('sidebar-responsive');
+        sidebarOpen = true;
+    }
+}
+
+function closeSidebar() {
+    if (sidebarOpen) {
+        sidebar.classList.remove('sidebar-responsive');
+        sidebarOpen = false;
+    }
+}
+
+// ---------- CHARTS ----------
+
+// BAR CHART
+const barChartOptions = {
+    series: [
+        {
+            data: [10, 8, 6, 4, 2],
+            name: 'Products',
         },
-        options: {
-            responsive: true,
-            scales: {
-                x: {
-                    beginAtZero: true,
-                    grid: {
-                        display: false
-                    }
-                },
-                y: {
-                    beginAtZero: true,
-                    grid: {
-                        borderDash: [5, 5]
-                    }
-                }
+    ],
+    chart: {
+        type: 'bar',
+        background: 'transparent',
+        height: 350,
+        toolbar: {
+            show: false,
+        },
+    },
+    colors: ['#007FFF', '#5072A7', '#002244', '#E0FFFF', '#583cb3'],
+    plotOptions: {
+        bar: {
+            distributed: true,
+            borderRadius: 4,
+            horizontal: false,
+            columnWidth: '40%',
+        },
+    },
+    dataLabels: {
+        enabled: false,
+    },
+    fill: {
+        opacity: 1,
+    },
+    grid: {
+        borderColor: '#55596e',
+        yaxis: {
+            lines: {
+                show: true,
             },
-            plugins: {
-                legend: {
-                    position: 'top',
+        },
+        xaxis: {
+            lines: {
+                show: true,
+            },
+        },
+    },
+    legend: {
+        labels: {
+            colors: '#f5f7ff',
+        },
+        show: true,
+        position: 'top',
+    },
+    stroke: {
+        colors: ['transparent'],
+        show: true,
+        width: 2,
+    },
+    tooltip: {
+        shared: true,
+        intersect: false,
+        theme: 'dark',
+    },
+    xaxis: {
+        categories: ['JavaScript', 'Python', 'Java', 'C++', 'Ruby'],
+        title: {
+            style: {
+                color: '#f5f7ff',
+            },
+        },
+        axisBorder: {
+            show: true,
+            color: '#55596e',
+        },
+        axisTicks: {
+            show: true,
+            color: '#55596e',
+        },
+        labels: {
+            style: {
+                colors: '#f5f7ff',
+            },
+        },
+    },
+    yaxis: {
+        title: {
+            text: 'Count',
+            style: {
+                color: '#f5f7ff',
+            },
+        },
+        axisBorder: {
+            color: '#55596e',
+            show: true,
+        },
+        axisTicks: {
+            color: '#55596e',
+            show: true,
+        },
+        labels: {
+            style: {
+                colors: '#f5f7ff',
+            },
+        },
+    },
+};
+
+const barChart = new ApexCharts(
+    document.querySelector('#bar-chart'),
+    barChartOptions
+);
+barChart.render();
+
+// AREA CHART
+const areaChartOptions = {
+    series: [
+        {
+            name: 'No of Problems',
+            data: [31, 40, 28, 51, 42, 109, 100],
+        },
+        {
+            name: 'No of Round',
+            data: [11, 32, 45, 32, 34, 52, 41],
+        },
+    ],
+    chart: {
+        type: 'area',
+        background: 'transparent',
+        height: 350,
+        stacked: false,
+        toolbar: {
+            show: false,
+        },
+    },
+    colors: ['#007FFF', '#F0F8FF'],
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    dataLabels: {
+        enabled: false,
+    },
+    fill: {
+        gradient: {
+            opacityFrom: 0.4,
+            opacityTo: 0.1,
+            shadeIntensity: 1,
+            stops: [0, 100],
+            type: 'vertical',
+        },
+        type: 'gradient',
+    },
+    grid: {
+        borderColor: '#55596e',
+        yaxis: {
+            lines: {
+                show: true,
+            },
+        },
+        xaxis: {
+            lines: {
+                show: true,
+            },
+        },
+    },
+    legend: {
+        labels: {
+            colors: '#f5f7ff',
+        },
+        show: true,
+        position: 'top',
+    },
+    markers: {
+        size: 6,
+        strokeColors: '#1b2635',
+        strokeWidth: 3,
+    },
+    stroke: {
+        curve: 'smooth',
+    },
+    xaxis: {
+        axisBorder: {
+            color: '#55596e',
+            show: true,
+        },
+        axisTicks: {
+            color: '#55596e',
+            show: true,
+        },
+        labels: {
+            offsetY: 5,
+            style: {
+                colors: '#f5f7ff',
+            },
+        },
+    },
+    yaxis: [
+        {
+            title: {
+                text: 'Purchase Orders',
+                style: {
+                    color: '#f5f7ff',
                 },
-                tooltip: {
-                    callbacks: {
-                        label: function (context) {
-                            return `Value: ${context.raw}`;
-                        }
-                    }
-                }
-            }
-        }
-    });
+            },
+            labels: {
+                style: {
+                    colors: ['#f5f7ff'],
+                },
+            },
+        },
+        {
+            opposite: true,
+            title: {
+                text: 'Sales Orders',
+                style: {
+                    color: '#f5f7ff',
+                },
+            },
+            labels: {
+                style: {
+                    colors: ['#f5f7ff'],
+                },
+            },
+        },
+    ],
+    tooltip: {
+        shared: true,
+        intersect: false,
+        theme: 'dark',
+    },
+};
 
-    // Handle settings form submission
-    const settingsForm = document.getElementById('settingsForm');
-    settingsForm.addEventListener('submit', (event) => {
-        event.preventDefault(); // Prevent form from submitting normally
-
-        // Process form data
-        const email = settingsForm.email.value;
-        const password = settingsForm.password.value;
-
-        alert(`Updated Email: ${email}\nUpdated Password: ${password}`);
-
-        // Here you could add AJAX request to save data or other processing
-    });
-});
+const areaChart = new ApexCharts(
+    document.querySelector('#area-chart'),
+    areaChartOptions
+);
+areaChart.render();
