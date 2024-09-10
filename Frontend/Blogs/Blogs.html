@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Manager</title>
+    <link rel="stylesheet" href="Blogs.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Blog Manager</h1>
+            <button id="addBlogBtn">Add Blog</button>
+        </header>
+
+        <div id="blogForm" class="hidden">
+            <h2 id="formTitle">Add New Blog</h2>
+            <form id="blogFormElement">
+                <input type="hidden" id="blogId">
+                <label for="blogTitle">Title:</label>
+                <input type="text" id="blogTitle" required>
+                <label for="blogContent">Content:</label>
+                <textarea id="blogContent" required></textarea>
+                <button type="submit">Save</button>
+                <button type="button" id="cancelBtn">Cancel</button>
+            </form>
+        </div>
+
+        <div id="blogsContainer"></div>
+    </div>
+
+    <script src="Blogs.js"></script>
+</body>
+
+</html>

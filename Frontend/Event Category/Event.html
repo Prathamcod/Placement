@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events</title>
+  <link rel="stylesheet" href="Event.css">
+  <style>
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+
+    .filter {
+      text-align: left;
+      width: 250px;
+      padding-right: 20px;
+    }
+
+    .filter h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .filter input {
+      margin-right: 10px;
+    }
+
+    .filter label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .filter .view-more {
+      margin-top: 10px;
+      padding: 8px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .events {
+      text-align: left;
+      flex-grow: 1;
+    }
+
+    .heading {
+      text-align: center;
+    }
+
+    .main {
+      display: flex;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .content {
+      margin-left: 20px;
+    }
+
+    .time,
+    .venue {
+      padding: 5px 0;
+    }
+
+    .time span,
+    .venue span {
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="heading">
+    <h1>Events</h1>
+  </div>
+  <div class="container">
+    <div class="filter">
+      <h3>Category</h3>
+      <label><input type="checkbox"> Development</label>
+      <label><input type="checkbox"> AI/ML</label>
+      <label><input type="checkbox"> Cybersecurity</label>
+
+      <h3>Date</h3>
+      <label><input type="checkbox"> Today</label>
+      <label><input type="checkbox"> Tomorrow</label>
+      <label><input type="date"></label>
+
+      <h3>Price</h3>
+      <label><input type="checkbox"> Free</label>
+      <label><input type="checkbox"> Paid</label>
+
+      <h3>Location</h3>
+      <label><input type="checkbox"> Online</label>
+      <label><input type="checkbox"> Offline</label>
+
+      <button class="view-more">View More</button>
+    </div>
+
+    <div class="events">
+      <div class="main">
+        <img src="./img/c3.jpeg" alt="" width="200px" height="200px">
+        <div class="content">
+          <p>How AI chatbots are revolutionising the modern workplace</p>
+          <div class="time">
+            <span>30 Sept</span>
+            <span>12:00pm</span>
+            <span>GMT+5:30</span>
+          </div>
+          <div class="time">
+            <span>AI/ML</span>
+            <span>Free</span>
+            <span>Offline</span>
+          </div>
+          <div class="venue">
+            <span>Venue: Ahmedabad</span>
+          </div>
+          <div class="p1">
+            <ul>
+              <li>Kaushal Dubey</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Content Cards -->
+      <div class="main">
+        <img src="./img/c2.jpeg" alt="" width="200px" height="200px">
+        <div class="content">
+          <p>Understanding the Future of Cybersecurity</p>
+          <div class="time">
+            <span>01 Oct</span>
+            <span>2:00pm</span>
+            <span>GMT+5:30</span>
+          </div>
+          <div class="time">
+            <span>Cybersecurity</span>
+            <span>Paid</span>
+            <span>Online</span>
+          </div>
+          <div class="venue">
+            <span>Venue: Online</span>
+          </div>
+          <div class="p1">
+            <ul>
+              <li>Rahul Mehta</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <img src="./img/c1.jpeg" alt="" width="200px" height="200px">
+        <div class="content">
+          <p>Introduction to Full Stack Development</p>
+          <div class="time">
+            <span>05 Oct</span>
+            <span>11:00am</span>
+            <span>GMT+5:30</span>
+          </div>
+          <div class="time">
+            <span>Development</span>
+            <span>Free</span>
+            <span>Offline</span>
+          </div>
+          <div class="venue">
+            <span>Venue: Bangalore</span>
+          </div>
+          <div class="p1">
+            <ul>
+              <li>Sneha Sharma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more content cards as needed -->
+    </div>
+  </div>
+
+
+  <!-----footers----- -->
+  <footer class="Footer">
+    <div class="contact-form">
+      <h3>Leave a Reply: </h3>
+      <textarea id="reply-section" name="reply-section" rows="4" cols="50" placeholder="comment:"></textarea>
+
+      <div class="name">
+        <span>Name:</span>
+        <input type="text" name="" id="">
+      </div>
+
+      <div class="email">
+        <span>Email:</span>
+        <input type="text" name="" id="">
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" name="" id="">
+        <span>Save my Name and Email for later</span>
+      </div>
+      <div class="submit">
+        <a href=""><button>Post Comment</button></a>
+      </div>
+    </div>
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul class="links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Compressions</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="links">
+          <li><a href="#">Free Courses</a></li>
+          <li><a href="#">Latest Technologies</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">New Uploads</a></li>
+          <li><a href="#">Resume Enhancer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="links">
+          <li><a href="#">Customer Agreement</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Media Kit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Blog Posts and Events</h4>
+        <p>
+          Subscribe to our Blogs & Events for a weekly dose
+          of News of Events and Latest Technology, Updates, helpful tips.
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
