@@ -167,14 +167,14 @@ a.facebook .facebook-icon {
 }
 
 .facebook-icon,
-img.google-img {
+img.fa fa-google-plus {
     position: absolute;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
 }
 
-img.google-img {
+img .fa fa-google-plus {
     height: 20px;
     width: 20px;
     object-fit: cover;

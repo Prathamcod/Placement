@@ -36,6 +36,11 @@ body {
     color: #000;
 }
 
+.logo a {
+    text-decoration: none;
+    color: #1c253a
+}
+
 .logo h1 span {
     color: #146ef5;
 }

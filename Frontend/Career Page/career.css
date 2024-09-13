@@ -1,30 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-/* Navbar */
 .HeaderPlace {
-
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f0f0f0;
-    padding: 23px 12%;
+    padding: 15px 12%;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.23);
 }
 
 /* --------Logo------ */
 .logo a {
-    color: #10182f;
     text-decoration: none;
 }
 
@@ -112,170 +106,216 @@ body {
     color: #000;
 }
 
-/* General Styles for job section */
-.heading-box {
-    text-align: center;
-    border-bottom: 2px solid black;
+/* ------------------Main Section-------------------- */
+
+.MainSectionPlace {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 30px;
+}
+
+.QAvedio {
+    background: #f0f0f0;
+    width: 600px;
+    height: 400px;
     border-radius: 10px;
-    gap: 20px;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.23);
 }
 
-.heading-box h1 {
+.QAvedioMain {
+    background-color: #146ef5;
+    width: 550px;
+    height: 300px;
     margin: auto;
-    padding: 20px;
-    color: black;
-}
-
-.heading-box:hover {
-    transform: scale(1.05);
-}
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.search-bar {
-    position: relative;
     margin-top: 20px;
-    margin-bottom: 20px;
-    width: 62%;
-    margin-left: 100px;
+    border-radius: 10px;
 }
 
-.search-bar input {
-    width: 100%;
-    padding: 10px 30px 10px 30px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+/* ------- get Guidance-------- */
+.getGuidance {
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
-.search-bar i {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #007aff;
-    font-size: 1.2rem;
+.getGuidance a {
+    background-color: #146ef5;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000;
 }
 
-.content {
+.getGuidance i {
+    margin-left: 10px;
+}
+
+/* Main Section */
+#CareerSetion {}
+
+.CareerHeading {
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    color: #575555;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.CareerHeading span {
+    color: #146ef5;
+    font-weight: 900;
+}
+
+.outline {
+    width: 100px;
+    height: 5px;
+    background-color: #146ef5;
+    margin: auto;
+}
+
+.CareerAssest {
+    margin: auto;
+    margin-top: 100px;
+    width: 50%;
+    height: 100%;
+    background: #f0f0f0;
+    box-shadow: 0 5px 10px rgba(8, 80, 224, 0.23);
+}
+
+.Question {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.subQuestion {
+    margin: 12px;
+    margin-top: 20px;
+}
+
+.subQuestion h3 {
+    word-spacing: 10px;
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+}
+
+.CheckBox {
+    word-spacing: 10px;
+    margin: 20px;
+    font-family: "Onest", sans-serif;
+}
+
+.OtherBox {
     display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.OtherBox input {
+    width: 400px;
+    padding: 10px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid #575555;
+}
+
+.nxtbtn {
+    padding: 5px;
+    font-family: "Onest", sans-serif;
+    background-color: #146ef5;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:800px) {
+    .CareerAssest {
+        width: 100%;
+    }
+
+    .subQuestion h3 {
+        word-spacing: 5px;
+    }
+}
+
+.innerCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subinnerCard {
     gap: 20px;
+    background-color: #f0f0f0;
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    margin-top: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
-
-.job-listings {
-    flex: 3;
+.subinnerCard:hover {
+    transform: translateX(1);
 }
 
-.job-box {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 85%;
-    margin-left: 10%;
-}
-
-.job-box:hover {
-    transform: scale(1.04);
-}
-
-.company-logo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.job-details {
-    flex: 1;
-}
-
-.company-name {
-    font-size: 1.5rem;
-    margin: 0;
-    color: #333;
-}
-
-.job-title {
-    font-size: 1rem;
-    margin: 0;
-    color: #333;
-}
-
-.job-location,
-.job-type,
-.required-skills {
-    margin: 5px 0;
-}
-
-.job-description {
-    margin: 10px 0;
-}
-
-.apply-btn {
-    display: inline-block;
-    background-color: #007aff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.apply-btn:hover {
-    background-color: #005bb5;
-}
-
-.filters {
-    flex: 1;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-.filters h3 {
+.Content {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
     text-align: center;
-    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
-.filter {
-    margin-top: 5px;
-    margin-bottom: 20px;
+.Content .line {
+    margin: auto;
+    width: 50px;
+    height: 3px;
+    background: #146ef5;
 }
 
-.filter h4 {
-    margin-bottom: 10px;
+.roadmap {
+    margin: auto;
+    width: 100px;
+    height: 100px;
 }
 
-.filter label {
-    display: block;
-    margin-bottom: 5px;
+.roadmap1 {
+    margin: auto;
+    width: 150px;
+    height: 100px;
+    margin-top: 20px;
 }
 
-.filter select {
+.roadmap1 img {
+    margin: auto;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    height: 100%;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-    }
+.roadmap img {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.Arrowbutton {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.Arrowbutton button {
+    margin: auto;
+    padding: 10px 30px;
+    background-color: #146ef5;
+    border-radius: 40px;
+    border: 2px solid #000;
+    cursor: pointer;
+    color: white;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -290,11 +330,17 @@ body {
     flex: 1;
 }
 
+Footer {
+    margin-bottom: 0;
+}
+
 .footer {
     background-color: #10182f;
     padding: 40px 20px;
     color: #bfbfbf;
     text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .footer h3 {

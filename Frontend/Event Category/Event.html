@@ -6,81 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Events</title>
   <link rel="stylesheet" href="Event.css">
-  <style>
-    .container {
-      display: flex;
-      padding: 20px;
-    }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-    .filter {
-      text-align: left;
-      width: 250px;
-      padding-right: 20px;
-    }
-
-    .filter h3 {
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-
-    .filter input {
-      margin-right: 10px;
-    }
-
-    .filter label {
-      display: block;
-      margin-bottom: 8px;
-      font-size: 14px;
-    }
-
-    .filter .view-more {
-      margin-top: 10px;
-      padding: 8px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      font-size: 14px;
-    }
-
-    .events {
-      text-align: left;
-      flex-grow: 1;
-    }
-
-    .heading {
-      text-align: center;
-    }
-
-    .main {
-      display: flex;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      padding: 10px;
-      border-radius: 8px;
-    }
-
-    .content {
-      margin-left: 20px;
-    }
-
-    .time,
-    .venue {
-      padding: 5px 0;
-    }
-
-    .time span,
-    .venue span {
-      display: inline-block;
-      margin-right: 15px;
-      font-size: 14px;
-    }
-  </style>
 </head>
 
 <body>
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <h1>Hello<span>World</span></h1>
+      </div>
+      <div class="navbar-child">
+        <ul>
+          <li><a href="">Features</a></li>
+          <li><a href="">Trending</a></li>
+          <li><a href="">Challenges</a></li>
+          <li><a href="">Jobs</a></li>
+        </ul>
+      </div>
 
+      <div class="search">
+        <input type="search" placeholder="Search Trending Course"><i class="fa fa-search"></i>
+      </div>
+
+      <!-- Profile Icon -->
+      <div class="profileIcn">
+        <a href="../Profile Page/Profile.html"> <i class="fa fa-user-circle-o"></i></a>
+      </div>
+
+      <!-- Get Started Button -->
+      <div class="GetsatartBtn">
+        <a href="../Login Page/login.html"><button id="Btn">Get Started</button></a>
+      </div>
+
+    </div>
+  </nav>
   <div class="heading">
     <h1>Events</h1>
   </div>
@@ -109,7 +79,7 @@
 
     <div class="events">
       <div class="main">
-        <img src="./img/c3.jpeg" alt="" width="200px" height="200px">
+        <div class="image"><img src="./img/c1.jpeg" alt=""></div>
         <div class="content">
           <p>How AI chatbots are revolutionising the modern workplace</p>
           <div class="time">
@@ -135,7 +105,7 @@
 
       <!-- Additional Content Cards -->
       <div class="main">
-        <img src="./img/c2.jpeg" alt="" width="200px" height="200px">
+        <div class="image"><img src="./img/c2.jpeg" alt=""></div>
         <div class="content">
           <p>Understanding the Future of Cybersecurity</p>
           <div class="time">
@@ -160,7 +130,7 @@
       </div>
 
       <div class="main">
-        <img src="./img/c1.jpeg" alt="" width="200px" height="200px">
+        <div class="image"><img src="./img/c3.jpeg" alt=""></div>
         <div class="content">
           <p>Introduction to Full Stack Development</p>
           <div class="time">
@@ -189,8 +159,9 @@
   </div>
 
 
-  <!-----footers----- -->
-  <footer class="Footer">
+  <!-- Footer -->
+
+  <section class="footer">
     <div class="contact-form">
       <h3>Leave a Reply: </h3>
       <textarea id="reply-section" name="reply-section" rows="4" cols="50" placeholder="comment:"></textarea>
@@ -254,14 +225,14 @@
           <button type="submit">SUBSCRIBE</button>
         </form>
         <div class="icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-github"></i>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </div>
-  </footer>
+  </section>
 </body>
 
 </html>
